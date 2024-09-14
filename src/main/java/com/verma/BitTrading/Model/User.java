@@ -46,6 +46,18 @@ public class User {
         this.email = email;
     }
 
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", fullName='" + fullName + '\'' +
+                ", email='" + email + '\'' +
+                ", password='" + password + '\'' +
+                ", role=" + role +
+                ", twoFactorAuth=" + twoFactorAuth +
+                '}';
+    }
+
     public void setPassword(String password) {
         this.password = password;
     }
