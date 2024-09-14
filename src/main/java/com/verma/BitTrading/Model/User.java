@@ -41,7 +41,7 @@ public class User {
     public String getEmail() {
         return email;
     }
-
+    @Column(unique = true)
     public void setEmail(String email) {
         this.email = email;
     }
